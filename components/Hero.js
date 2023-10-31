@@ -27,9 +27,6 @@ export default function Hero() {
             src={userData.avatarUrl}
             alt='avatar of the author'
             className='rounded-lg shadow'
-            loading='eager'
-            width={600}
-            height={600}
             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
           />
           <div className='flex flex-row justify-between mt-4'>
