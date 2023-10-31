@@ -2,15 +2,15 @@ import userData from "@constants/data"
 
 export default function Projects() {
   return (
-    <section className="bg-white dark:[#242936]">
-      <div className="max-w-6xl mx-auto h-48 bg-white dark:[#242936]">
-        <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+    <section className='bg-[#FCFCFC] dark:[#242936]'>
+      <div className='max-w-6xl mx-auto h-48 bg-[#FCFCFC] dark:[#242936]'>
+        <h1 className=' text-5xl md:text-9xl font-bold py-20 text-[#5C6166]enter md:text-left'>
           Projects
         </h1>
       </div>
       {/* Grid starts here */}
-      <div className="bg-[#F1F1F1] dark:bg-[#1f2430]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
+      <div className='bg-[#F1F1F1] dark:bg-[#1f2430]'>
+        <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40'>
           {userData.projects.map((proj, idx) => (
             <ProjectCard
               title={proj.title}
@@ -22,7 +22,7 @@ export default function Projects() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 const ProjectCard = ({ title, link, imgUrl, number }) => {

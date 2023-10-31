@@ -18,27 +18,23 @@ export default function ContainerBlock({ children, ...customMeta }) {
     <div>
       <Head>
         <title>{meta.title}</title>
-        <meta name="robots" content="follow, index" />
-        <meta content={meta.description} name="description" />
-        <meta
-          property="og:url"
-          content={`https://rsstdd.com${router.asPath}`}
-        />
-        <link rel="canonical" href={`https://rsstdd.com${router.asPath}`} />
-        <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Ross Todd" />
-        <meta property="og:description" content={meta.description} />
-        <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content={meta.image} />
-        {meta.date && (
-          <meta property="article:published_time" content={meta.date} />
-        )}
+        <link rel='shortcut icon' href='/public/apple-touch-icon.png' />
+        <meta name='robots' content='follow, index' />
+        <meta content={meta.description} name='description' />
+        <meta property='og:url' content={`https://rsstdd.com${router.asPath}`} />
+        <link rel='canonical' href={`https://rsstdd.com${router.asPath}`} />
+        <meta property='og:type' content={meta.type} />
+        <meta property='og:site_name' content='Ross Todd' />
+        <meta property='og:description' content={meta.description} />
+        <meta property='og:title' content={meta.title} />
+        <meta property='og:image' content={meta.image} />
+        {meta.date && <meta property='article:published_time' content={meta.date} />}
       </Head>
-      <main className="dark:bg-[#0b0e14] w-full">
+      <main className='dark:bg-[#242936] bg-[#FCFCFC] w-full'>
         <Navbar />
         <div>{children}</div>
         <Footer />
       </main>
     </div>
-  );
+  )
 }
