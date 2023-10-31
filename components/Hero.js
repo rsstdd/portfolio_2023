@@ -24,10 +24,12 @@ export default function Hero() {
       <div className='hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20'>
         <div className='w-3/4 '>
           <Image
-            src={userData.avatarUrl}
             alt='avatar of the author'
             className='rounded-lg shadow'
+            height='600'
             sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+            src={userData.avatarUrl}
+            width='600'
           />
           <div className='flex flex-row justify-between mt-4'>
             <div className='flex flex-row space-x-4'>

@@ -18,7 +18,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
     <div>
       <Head>
         <title>{meta.title}</title>
-        <link rel='shortcut icon' href='/public/apple-touch-icon.png' />
+        <link rel='shortcut icon' href='/public/rsstdd.svg' />
         <meta name='robots' content='follow, index' />
         <meta content={meta.description} name='description' />
         <meta property='og:url' content={`https://rsstdd.com${router.asPath}`} />
